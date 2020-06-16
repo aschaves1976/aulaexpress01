@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%= title %> - Aula03 Express + NodeJs</p>
+
+    <table>
+        <tr>
+            <td>ITEM</td>
+            <td>DESCRICAO</td>
+            <td>PRECO</td>
+        </tr>
+        <% for( var i = 0; i < products.length; i++ ) { %>
+            <tr>
+                    <td> <%= products[i].item %> </td>
+                    <td> <%= products[i].descricao %> </td>
+                    <td> <%= products[i].preco %> </td>
+            </tr>
+        <% } %>
+    </table>
+
+    <a href="/cad-prod">Cadastrar Produtos</a>
+
+  </body>
+</html>
