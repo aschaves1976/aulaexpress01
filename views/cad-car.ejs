@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="/cad-car" method="POST">
+      <p>
+        Marca: <select name="marca">
+            <option>GMC</option>
+            <option>Honda</option>
+            <option>Toyota</option>
+            <option>Ford</option>
+          </select>
+      </p>
+      <p>
+          Modelo: <input type="text" name="modelo" value=""/>
+      </p>
+       <p>
+           Ano: <input type="text" name="ano" value="2020"/>
+      </p>
+      <p>
+        <input type="submit" value="Salvar" />
+      </p>
+    </form>
+    <a href="/list-car">Voltar para Lista de Veículos</a>
+  </body>
+</html>
